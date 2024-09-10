@@ -12,7 +12,7 @@ const BannerInfo = () => {
           <img src={profile} alt="Miguel Wills" className="profile-img"></img>
             
           <p className="lead">Researcher, Treasuer, Developer, Animator
-            <img src={computer} alt="image not found" className="left-image"></img>
+            <img src={computer} alt="image not found" className="left-img"></img>
           </p>
         </div>
       </header>
