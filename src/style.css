@@ -1,0 +1,284 @@
+body {
+    font-family: 'Poppins', sans-serif;
+   /* font-weight: 500 ;*/
+    background-color: #68c7ff;
+    font-weight:bold;
+}
+
+
+.py-5{
+    background-color:#004b84;
+}
+
+.spacer {
+  height: 200px; /* Adjust the height as needed */
+}
+.divider{
+  align-items:center;
+  display:flex;
+  gap:200px;
+}
+
+.about-me-info{
+  background-color:#004b84;
+  text-align: left;
+  flex:1;
+  
+
+}
+.row {
+  align-items: stretch; 
+  display: flex;
+  /* font-size:30px; */
+  justify-content: space-between; /* Push "About Me" and "Technical Skills" to opposite sides */
+  /* align-items: flex-start; Align them at the top */
+}
+
+.tech-skills p {
+  font-family: 'Mochiy Pop One';
+  color: white;
+  font-size: 1.05rem;
+  
+    margin: 5; /* Remove default margins */
+    padding:20px;/* Remove default padding */
+
+    line-height: 0; /* Adjust the line height to make the lines closer */
+  
+  margin-bottom:0;
+
+  text-align: center;
+}
+.tech-skills .col-6 {
+  padding-left: 10px;  /* Adjust left padding */
+  padding-right: 10px; /* Adjust right padding */
+}
+
+
+
+.tech-skills {
+  
+  /* align-items: flex-end; */
+  flex:1;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  /* justify-content: center;  */
+  background-color: #004b84;
+}
+
+
+
+.project-title {
+  color: #ff4081; /* Pink color */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  background-color: #f7f9fb;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Project-title{
+ 
+  font-size:60px;
+  margin-left:200px;
+  margin-bottom:0px;
+  /* padding: 10px; */
+  align-items:center;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+}
+
+.Project-section{
+  background-color:white;
+  
+  padding: 20px;
+}
+
+.Project-header{
+  align-items:center;
+  display:flex;
+  gap:200px;
+}
+
+
+
+
+.project-card h3 a {
+  color: #ff4081; /* Pink color */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  z-index: 10; /* Ensure the link is in front */
+  position: relative; /* Give it proper stacking order */
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+.x{
+  background-color: salmon;
+}
+.Project{
+    background-color:white;
+    border: 3px solid black; /* Border around each item */
+    width: 400px;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  
+}
+.OverView {
+  padding: 1rem;
+}
+
+.overview-content {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the container */
+}
+/* 
+.image-container,
+.text-container {
+  flex: 2; /* Allow both containers to take up equal space */
+  /* padding: 1rem; Add padding around content if needed */
+/* }  */ 
+
+.image-container {
+  flex:1;
+  max-width: 75%; /* Ensure the image container does not exceed 50% of the width */
+}
+
+.text-container {
+  flex:2;
+  max-width: 100%; /* Ensure the text container does not exceed 50% of the width */
+}
+
+.Resume_area {
+  max-width: 100%; /* Ensure image scales to fit its container */
+  width: 940px; /* Maintain aspect ratio */
+}
+
+.OverView{
+  background-color:#ff99bf;
+  text-align:center;
+  font-family: "Poppins";
+  color:#004b84;
+  font-size:40px;
+  font-weight:bold;
+}
+.OverView-content{
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the container */
+  gap: 200px; /* Space between paragraph and image */
+}
+.Resume_area {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+.OverView p{
+  font-size:20px;
+  font-family: 'Poppins', sans-serif;
+  display:flex;
+  /* color:white;  */
+  /* width: 50%; */
+  text-align:center;
+ 
+}
+
+
+.tech-skills .container{
+  /* display:flex; */
+  width: 80%;
+  height: 100%;
+  background-color: #003c6b;
+  border-radius: 20%;
+}
+
+.about-me{
+  display:flex;
+  color:white;
+  
+
+  flex:1;
+}
+
+
+.BannerInfo{
+    background-color: #68c7ff;
+}
+
+
+.title{
+    text-align:left;
+    font: 'Poppins', sans-serif;
+    font-weight:500;
+    font-weight:bold;
+    color:#004b84;
+    font-size:75px;
+    left:200px;
+}
+
+
+.lead{
+    text-align:left;
+    font: 'Poppins', sans-serif;
+    font-weight:bold;
+    font-size:35px;
+    color:#004b84;
+}
+
+
+
+.left-image{
+    position:absolute;
+    left:100px;
+    top:190px;
+    width: 260px;
+    float:left;
+   
+}
+
+
+
+  .bg-lightblue {
+   
+     background-color: #68c7ff;
+    
+     }
+     
+    .custom-outline {
+        width: 300px; /* Adjust as needed */
+        height: 300px; /* Adjust as needed */
+        object-fit: cover; /* Ensure the image covers the container */
+        border: 5px solid #000; /* Outline color and width */
+    } 
+
+  .profile-img {
+    margin-top: 20px;
+    
+    width: 360px;
+    position: absolute;
+    right:100px;
+    top:10px;
+    height: auto;
+}
+
