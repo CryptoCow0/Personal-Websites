@@ -30,6 +30,7 @@ const Projects = () => {
         <p>
         This code uses Atomic Integers for thread safety and simplicity. It generates a random string with a Python script, then analyzes its frequency using project.java. The analysis, detailed in a separate report, uses 4 cores for files over 1 billion characters. See the report on my GitHub.
         </p>
+        <p>I created a multi-threaded counter in Java to use Atomic IntegersThis code uses Atomic Integers to ensure Thread safety, avoid Race Conditions, and for simplicity. It uses a python file to generate a random string of a specified size, then you can run the project.java with this to perform frequency analysis</p>
       </div>
       <div className="project-card">
         <h3>
