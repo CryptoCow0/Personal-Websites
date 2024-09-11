@@ -1,6 +1,6 @@
 import React from 'react';
 import computer from './computer.png';
-import profile from './profile.png';
+import profile from './profile_update.png';
 
 import './style.css';
 
