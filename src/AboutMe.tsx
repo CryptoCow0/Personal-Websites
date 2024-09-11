@@ -11,7 +11,7 @@ const AboutMe = () => {
                 <div className='about-me-info col-lg-5 col-sm-12'>
                     <h1 className='m-4'>About Me</h1>
                     <p className='lh-lg'>I am a Colorado School of Mines Student dedicated to the importance of research in machine learning projects and cybersecurity looking to use my knowledge in outreach. 
-                        <br></br><br></br><br></br>I enjoy problem-solving and am passionate about software development, and cybersecurity. I am never one to run from a challenge or something.
+                        <br></br><br></br><br></br>I enjoy problem-solving and am passionate about software development, and cybersecurity.
                     </p>
                     <br></br><br></br><br></br><br></br>                        
                 
