@@ -9,7 +9,8 @@ const OverView = () => {
             <div className="overview-content">
                 <div className="image-container">
                 <a href="./Miguel-Wills-Resume.pdf" download="filename.zip">
-                <img src={computer} alt="Computer Overview" className="Resume_area" />
+                
+                <img src={computer} alt="Computer Overview" className="Resume_area"  />
                 </a>
                     
                 </div>

@@ -27,7 +27,9 @@ const Projects = () => {
        Multi-threaded counter
         </a>
         </h3>
-        <p>This space gives you more room to expound on your message. Remember that writing effectively is an art...</p>
+        <p>
+        This code uses Atomic Integers for thread safety and simplicity. It generates a random string with a Python script, then analyzes its frequency using project.java. The analysis, detailed in a separate report, uses 4 cores for files over 1 billion characters. See the report on my GitHub.
+        </p>
       </div>
       <div className="project-card">
         <h3>
@@ -35,7 +37,10 @@ const Projects = () => {
         Reverse Shell ethical Lab for education
         </a>
         </h3>
-        <p>This space gives you more room to expound on your message. Remember that writing effectively is an art...</p>
+        <p>
+          I created a Reverse Shell that was used for a demonstration for teachers to show the dangers of phishing and how impactfull it can be.
+          
+          </p>
       </div>
     </div>
     </div>
