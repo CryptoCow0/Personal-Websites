@@ -27,7 +27,7 @@ const Projects = () => {
        Multi-threaded counter
         </a>
         </h3>
-        <p>This space gives you more room to expound on your message. Remember that writing effectively is an art...</p>
+        <p>I created a multi-threaded counter in Java to use Atomic IntegersThis code uses Atomic Integers to ensure Thread safety, avoid Race Conditions, and for simplicity. It uses a python file to generate a random string of a specified size, then you can run the project.java with this to perform frequency analysis</p>
       </div>
       <div className="project-card">
         <h3>

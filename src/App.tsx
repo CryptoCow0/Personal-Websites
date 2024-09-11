@@ -3,6 +3,7 @@ import BannerInfo from './BannerInfo'; // Adjust the path as needed
 import AboutMe from './AboutMe';
 import OverView from './OverView';
 import Projects from './Projects';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'; // Import any global CSS if necessary
 
 

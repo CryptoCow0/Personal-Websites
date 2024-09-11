@@ -11,7 +11,7 @@ const BannerInfo = () => {
         <div className="title">Miguel Wills</div>
           <img src={profile} alt="Miguel Wills" className="profile-img"></img>
             
-          <p className="lead">Researcher, Treasuer, Developer, Animator
+          <p className="lead">Researcher, Treasuer, Developer
             <img src={computer} alt="image not found" className="left-img"></img>
           </p>
         </div>
