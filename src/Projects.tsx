@@ -39,7 +39,7 @@ const Projects = () => {
         </h3>
         <p>
           I created a Reverse Shell that was used for a demonstration for teachers to show the dangers of phishing and how impactfull it can be.
-          
+           
           </p>
       </div>
     </div>
