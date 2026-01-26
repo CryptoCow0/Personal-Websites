@@ -5,6 +5,277 @@ body {
     font-weight:bold;
 }
 
+/* Hero/Banner Section - UPDATED WITH PADDING */
+.BannerInfo{
+    background-color: #68c7ff;
+    padding: 60px 5% 100px 5%; /* Added 100px bottom padding */
+    max-width: 1600px; /* Increased max-width */
+    margin: 0 auto;
+    position: relative; /* For absolutely positioned children */
+    min-height: 600px; /* Increased from 500px to contain the image */
+}
+
+.title{
+    text-align:left;
+    font: 'Poppins', sans-serif;
+    font-weight:500;
+    font-weight:bold;
+    color:#004b84;
+    font-size:75px;
+    margin-left: 120px; /* Add some left margin to move it in from the edge */
+    margin-bottom: 20px;
+}
+
+.lead{
+    text-align:left;
+    font: 'Poppins', sans-serif;
+    font-weight:bold;
+    font-size:35px;
+    color:#004b84;
+    margin-left: 120px; /* Match the title's left margin */
+    position: relative;
+}
+
+.left-img{
+    position:absolute;
+    left: 5%; /* Keep at the container edge */
+    top:190px;
+    width: 260px;
+    z-index: 1;
+}
+
+.profile-img {
+    margin-top: 20px;
+    width: 360px;
+    position: absolute;
+    right: 5%; /* Keep at the container edge */
+    top:10px;
+    height: auto;
+    z-index: 1;
+}
+
+/* Responsive adjustments for hero section */
+@media (max-width: 1200px) {
+    .BannerInfo {
+        padding: 50px 4%;
+    }
+    
+    .title {
+        font-size: 60px;
+        margin-left: 100px;
+    }
+    
+    .lead {
+        font-size: 28px;
+        margin-left: 100px;
+    }
+    
+    .profile-img {
+        width: 300px;
+        right: 4%;
+    }
+    
+    .left-img {
+        width: 220px;
+        left: 4%;
+    }
+}
+
+@media (max-width: 992px) {
+    .BannerInfo {
+        padding: 40px 3%;
+    }
+    
+    .title {
+        font-size: 50px;
+        margin-left: 80px;
+    }
+    
+    .lead {
+        font-size: 24px;
+        margin-left: 80px;
+    }
+    
+    .profile-img {
+        width: 250px;
+        right: 3%;
+    }
+    
+    .left-img {
+        width: 180px;
+        left: 3%;
+        top: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .BannerInfo {
+        padding: 30px 5%;
+        min-height: auto;
+    }
+    
+    .title {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    
+    .lead {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    /* Stack images on mobile */
+    .profile-img {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: 200px;
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .left-img {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 150px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* About Me Section Styles */
+.about-me {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-section,
+.skills-section {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skill-category {
+    margin-bottom: 28px;
+}
+
+.skill-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 12px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .about-me {
+        padding: 60px 0;
+    }
+
+    .about-section,
+    .skills-section {
+        padding: 32px;
+        margin-bottom: 24px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-me {
+        padding: 40px 0;
+    }
+
+    .about-section,
+    .skills-section {
+        padding: 24px;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .skill-badge {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Main and Divider (if needed for your layout) */
+.main {
+    width: 100%;
+}
+
+.divider {
+    width: 100%;
+}
 
 .py-5{
     background-color:#004b84;
@@ -13,6 +284,7 @@ body {
 .spacer {
   height: 200px; /* Adjust the height as needed */
 }
+
 .divider{
   align-items:center;
   display:flex;
@@ -23,54 +295,41 @@ body {
   background-color:#004b84;
   text-align: left;
   flex:1;
-  
-
 }
+
 .row {
   align-items: stretch; 
   display: flex;
-  /* font-size:30px; */
-  justify-content: space-between; /* Push "About Me" and "Technical Skills" to opposite sides */
-  /* align-items: flex-start; Align them at the top */
+  justify-content: space-between;
 }
 
 .tech-skills p {
   font-family: 'Mochiy Pop One';
   color: white;
   font-size: 1.05rem;
-  
-    margin: 5; /* Remove default margins */
-    padding:20px;/* Remove default padding */
-
-    line-height: 0; /* Adjust the line height to make the lines closer */
-  
+  margin: 5;
+  padding:20px;
+  line-height: 0;
   margin-bottom:0;
-
   text-align: center;
 }
+
 .tech-skills .col-6 {
-  padding-left: 10px;  /* Adjust left padding */
-  padding-right: 10px; /* Adjust right padding */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-
-
 .tech-skills {
-  
-  /* align-items: flex-end; */
   flex:1;
   color:white;
   display: flex;
   flex-direction: column;
   align-items: center; 
-  /* justify-content: center;  */
   background-color: #004b84;
 }
 
-
-
 .project-title {
-  color: #ff4081; /* Pink color */
+  color: #ff4081;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
@@ -80,6 +339,7 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
 .project-card {
   background-color: #f7f9fb;
   border: 1px solid #dcdcdc;
@@ -90,38 +350,35 @@ body {
 }
 
 .Project-title{
- 
   font-size:60px;
-  margin-left:200px;
+  /* margin-left:200px; */
   margin-bottom:0px;
-  /* padding: 10px; */
   align-items:center;
   display:flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start (left) */
+  /* align-items: flex-start; */
+  text-align: center;
 }
 
 .Project-section{
   background-color:white;
-  
   padding: 20px;
+  /* text-align: center; */
 }
 
 .Project-header{
   align-items:center;
+  text-align: center;
   display:flex;
   gap:200px;
 }
 
-
-
-
 .project-card h3 a {
-  color:#ff99bf; /* Pink color */
+  color:#ff99bf;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  z-index: 10; /* Ensure the link is in front */
-  position: relative; /* Give it proper stacking order */
+  z-index: 10;
+  position: relative;
 }
 
 .project-card {
@@ -132,48 +389,44 @@ body {
   max-width: 300px;
   border-radius: 10px;
 }
+
 .x{
   background-color: salmon;
 }
+
 .Project{
     background-color:white;
-    border: 3px solid black; /* Border around each item */
+    border: 3px solid black;
     width: 400px;
     height: 100px;
     border: 1px solid #c3c3c3;
     display: flex;
     justify-content: center;
     gap: 20px;
-  
 }
+
 .OverView {
   padding: 1rem;
 }
 
 .overview-content {
   display: flex;
-  align-items: flex-start; /* Align items at the start of the container */
+  align-items: flex-start;
 }
-/* 
-.image-container,
-.text-container {
-  flex: 2; /* Allow both containers to take up equal space */
-  /* padding: 1rem; Add padding around content if needed */
-/* }  */ 
 
 .image-container {
   flex:1;
-  max-width: 75%; /* Ensure the image container does not exceed 50% of the width */
+  max-width: 75%;
 }
 
 .text-container {
   flex:2;
-  max-width: 100%; /* Ensure the text container does not exceed 50% of the width */
+  max-width: 100%;
 }
 
 .Resume_area {
-  max-width: 100%; /* Ensure image scales to fit its container */
-  width: 940px; /* Maintain aspect ratio */
+  max-width: 100%;
+  width: 940px;
 }
 
 .OverView{
@@ -184,29 +437,27 @@ body {
   font-size:40px;
   font-weight:bold;
 }
+
 .OverView-content{
   display: flex;
-  align-items: flex-start; /* Align items at the start of the container */
-  gap: 200px; /* Space between paragraph and image */
+  align-items: flex-start;
+  gap: 200px;
 }
+
 .Resume_area {
-  max-width: 100%; /* Ensure image is responsive */
-  height: auto; /* Maintain aspect ratio */
-  flex-shrink: 0; /* Prevent image from shrinking */
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
 }
+
 .OverView p{
   font-size:20px;
   font-family: 'Poppins', sans-serif;
   display:flex;
-  /* color:white;  */
-  /* width: 50%; */
   text-align:center;
- 
 }
 
-
 .tech-skills .container{
-  /* display:flex; */
   width: 80%;
   height: 100%;
   background-color: #003c6b;
@@ -216,69 +467,16 @@ body {
 .about-me{
   display:flex;
   color:white;
-  
-
   flex:1;
 }
 
-
-.BannerInfo{
-    background-color: #68c7ff;
+.bg-lightblue {
+   background-color: #68c7ff;
 }
-
-
-.title{
-    text-align:left;
-    font: 'Poppins', sans-serif;
-    font-weight:500;
-    font-weight:bold;
-    color:#004b84;
-    font-size:75px;
-    left:200px;
-}
-
-
-.lead{
-    text-align:left;
-    font: 'Poppins', sans-serif;
-    font-weight:bold;
-    font-size:35px;
-    color:#004b84;
-}
-
-
-
-.left-img{
-    position:absolute;
-    left:100px;
-    top:190px;
-    width: 260px;
-    float:left;
-   
-}
-
-
-
-  .bg-lightblue {
-   
-     background-color: #68c7ff;
-    
-     }
      
-    .custom-outline {
-        width: 300px; /* Adjust as needed */
-        height: 300px; /* Adjust as needed */
-        object-fit: cover; /* Ensure the image covers the container */
-        border: 5px solid #000; /* Outline color and width */
-    } 
-
-  .profile-img {
-    margin-top: 20px;
-    
-    width: 360px;
-    position: absolute;
-    right:100px;
-    top:10px;
-    height: auto;
+.custom-outline {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #000;
 }
-

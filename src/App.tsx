@@ -12,9 +12,9 @@ const App: React.FC = () => {
     <div className="App">
       <BannerInfo />
       <div className="spacer"></div>
-      <AboutMe />  
+      {/* <AboutMe />   */}
       <Projects />
-      <OverView />
+      {/* <OverView /> */}
      
     </div>
    

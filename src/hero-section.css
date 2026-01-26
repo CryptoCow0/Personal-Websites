@@ -1,0 +1,94 @@
+/* Hero Section Styling - Centered with padding */
+
+.hero-container {
+    padding: 60px 10%; /* Add 10% padding on each side */
+    max-width: 1400px; /* Optional: limit max width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Alternative with fixed padding */
+.hero-container-alt {
+    padding: 60px 80px; /* Fixed padding on sides */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #2d3748;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 24px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.left-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-container,
+    .hero-container-alt {
+        padding: 50px 6%; /* Reduce padding on tablets */
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container,
+    .hero-container-alt {
+        padding: 40px 5%; /* Even less padding on mobile */
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-container,
+    .hero-container-alt {
+        padding: 30px 20px; /* Minimal padding on small screens */
+    }
+    
+    .title {
+        font-size: 1.75rem;
+    }
+}

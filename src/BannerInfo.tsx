@@ -1,22 +1,23 @@
 import React from 'react';
 import computer from './computer.png';
-import profile from './profile_update.png';
+import profile from './Profesh.jpeg';
 
 import './style.css';
+// import './hero-section.css';
 
-const BannerInfo = () => {
-    return(
-        <header className="bg-lightblue text-center py-5">
+const HeroSection = () => {
+    return (
         <div className="BannerInfo">
-        <div className="title">Miguel Wills</div>
-          <img src={profile} alt="Miguel Wills" className="profile-img"></img>
+            <div className="title">Miguel Wills
+            <img src={profile} alt="Miguel Wills" className="profile-img" />
             
-          <p className="lead">Researcher, Treasurer, Developer
-            <img src={computer} alt="image not found" className="left-img"></img>
-          </p>
+            <p className="lead">
+                Full Stack Developer, Full Time nerd
+                {/* <img src={computer} alt="image not found" className="left-img" /> */}
+            </p>
+            </div>
         </div>
-      </header>
     );
 }
 
-export default BannerInfo;
+export default HeroSection;

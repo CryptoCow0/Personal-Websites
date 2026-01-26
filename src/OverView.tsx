@@ -7,16 +7,12 @@ const OverView = () => {
         <div className="OverView">
             <h2>Overview</h2>
             <div className="overview-content">
-                <div className="image-container">
-                <a href="./Miguel-Wills-Resume.pdf" download="filename.zip">
-                
-                <img src={computer} alt="Computer Overview" className="Resume_area"  />
-                </a>
+                {/* <div className="image-container">
                     
-                </div>
+                </div> */}
                 <div className="text-container">
                     <p>
-                        I am currently a Junior with experience in different areas of computer science from machine learning research, human-robot interactions research, software development with personal projects, and working through cybersecurity projects and education.
+                        Alumus from the Colorado School of Mines, graduated with honors who loves learning new things in computer science
                     </p>
                     <p>
                         I have also volunteered in various locations educating small companies about good security practices and given talks to teachers regarding common phishing tactics.
